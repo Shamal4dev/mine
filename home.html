@@ -147,7 +147,14 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <script>
-      document.body.addEventListener("touchstart", (e) => {
+      document.body.addEventListener("mousemove", (e) => {
+        gsap.to(".circle", {
+          x: e.clientX,
+          y: e.clientY,
+          stagger: -0.04,
+        });
+      });
+      document.body.addEventListener("touchmove", (e) => {
         gsap.to(".circle", {
           x: e.clientX,
           y: e.clientY,
