@@ -1,9 +1,159 @@
 <!DOCTYPE html>
-<html >
-<head>
-    <title>Document</title>
-</head>
-<body>
-    <h1>hello</h1>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I follow you</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        background: black;
+        overflow: hidden;
+      }
+      .cursor {
+        position: relative;
+        width: 100px;
+        height: 100px;
+      }
+      .cursor .circle {
+        text-align: center;
+        color: darkblue;
+        position: absolute;
+        top: -50px;
+        left: -50px;
+        width: 100%;
+        height: 100%;
+        /* background: linear-gradient(#00d0ff, #ff005e); */
+        border-radius: 40%;
+        animation: my-skin 15s ease-in-out infinite forwards;
+      }
+      @keyframes my-skin {
+        0% {
+          background: linear-gradient(#c205fc, #00eeff);
+        }
+        14% {
+          background: linear-gradient(#1e05fc, #e2a866);
+        }
+        28% {
+          background: linear-gradient(#05d7fc, #ff005e);
+        }
+        42% {
+          background: linear-gradient(#36fc05, #ff005e);
+        }
+        50% {
+          background: linear-gradient(#fceb08, #1eaabd);
+        }
+        71% {
+          background: linear-gradient(#fc7c05, #45fce3);
+        }
+        86% {
+          background: linear-gradient(#f00d0d, #ec8bff);
+        }
+        100% {
+          background: linear-gradient(#fc05db, #a5f2ff);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cursor">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"><br /><h1>*  *</h1>
+        
+        <h1>-</h1>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script>
+      document.body.addEventListener("mousemove", (e) => {
+        gsap.to(".circle", {
+          x: e.clientX,
+          y: e.clientY,
+          stagger: -0.04,
+        });
+      });
+    </script>
+  </body>
 </html>
